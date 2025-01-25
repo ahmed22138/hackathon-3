@@ -33,9 +33,17 @@ const Chefs =() => {
 
         <div>
        <Navbar/>
-       <div className='max-w-5xl mx-20 px-4 py-8 '>
 
-<h1 className='text-5xl font-serif'>Our Latest</h1>
+            <div className="hi12">
+                              <Image src={'/images/dc.png'} alt='//' width={1920} height={410} />
+                              <h1> Our Blog</h1>
+                              <h2>Home  &gt; <span>Chefs</span></h2>
+                              </div>
+           
+
+
+
+       <div className='max-w-5xl mx-20 px-4 py-8 ml-60 '>
 
 <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 py-6 gap-7'>
 
