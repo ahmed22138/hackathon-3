@@ -1,158 +1,67 @@
+"use client"
+
+
 import Navbar from "@/components/nav";
 import { client } from "@/sanity/lib/client";
-import Chef from "@/sanity/schemaTypes/Chef";
-import { groq } from "next-sanity";
+import { allChef } from "@/sanity/lib/queries";
 import Image from "next/image";
-
-interface IChefs {
-    name: string;
-    position: string;
-    image: string;
-    description: string;
-    slug: string;
-}
-
-interface Props {
-    params: {
-        slug: string
-    }
-}
+import { useEffect, useState } from "react";
+import { Food } from "../../../types/food";
+import Link from "next/link";
+import { urlFor } from "@/sanity/lib/image";
 
 
-export default async function Chefs(){
 
-    const Chefs:IChefs[] = await client.fetch(`
-        *[_type == 'chef']{
-        name,
-    position,
-         image,
-    description,
-      'slug':slug.current,
-  
+const Chefs =() => {
+   
+      const [chef , setFood] = useState<Food[]>([])
     
-}[0]`)
+        useEffect (() => {
+    
+     async function fetchfood() {
+    
+        const fetchedFood : Food[] =await client.fetch(allChef)
+        setFood(fetchedFood)
+     }
+     fetchfood()
+    
+        },[])
+   
    
 
     return(
 
         <div>
        <Navbar/>
-      <div className="mtts">
+       <div className='max-w-5xl mx-20 px-4 py-8 '>
 
-       <Image src={'/images/dc.png'} alt="" width={1920} height={410}/>
-      
-            <h1>Our Chefs</h1>
-            <h2>Home &gt; <span> Chefs </span></h2>
+<h1 className='text-5xl font-serif'>Our Latest</h1>
+
+<div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 py-6 gap-7'>
+
+{
+    chef.map((chef) => (
+        <div key={chef._id}>
+          <Link href={`/blog/${chef.slug.current}`}>
+            {chef.image && (
+                <Image
+                src={urlFor(chef.image).url()}
+                alt="image"
+                width={200}
+                height={200}
+                className='w-full  object-cover rounded-md '
+                />
+            )}
+
+         <h1 className='text-2xl'>{chef.name}</h1>
+         <p className='w-48 py-1 text-lg '>{chef.description}</p>
+     
+</Link>
             </div>
-
-
-
-      <div className="nlf">
-        <div className="tsc1">
-            <Image src={'/images/mix (12).png'} alt="logo" width={600} height={200} className="h-[330px]" />
-            <div className="dix">
-            <h1>feharmia</h1>
-            <p >Chef</p>
-            </div>
-        </div>
-
-        <div className="tsc1">
-            <Image src={'/images/mix (11).png'} alt="logo" width={600} height={200} className="h-[330px]" />
-            <div className="dix">
-            <h1>Jorina Begum</h1>
-            <p >Chef</p>
-            </div>
-        </div>
-        
-        <div className="tsc1">
-            <Image src={'/images/mix (10).png'} alt="logo" width={600} height={200} className="h-[330px]" />
-            <div className="dix">
-            <h1>M.Mohammad</h1>
-            <p >Chef</p>
-            </div>
-        </div>
-
-        <div className="tsc1">
-            <Image src={'/images/mix (9).png'} alt="logo" width={600} height={200} className="h-[330px]" />
-            <div className="dix">
-            <h1>Munna Kathy</h1>
-            <p >Chef</p>
-          
-            </div>
-        </div>
-        </div>
-
-
-       
-       <div className="mnlc">
-       <div className="tsc1">
-            <Image src={'/images/mix (8).png'} alt="logo" width={600} height={200} className="h-[330px]" />
-            <div className="dix">
-            <h1>Tehmina Rumi</h1>
-            <p >Chef</p>
-            </div>
-        </div>
-
-        <div className="tsc1">
-            <Image src={'/images/mix (7).png'} alt="logo" width={600} height={200} className="h-[330px]" />
-            <div className="dix">
-            <h1>Bisnu devgon</h1>
-            <p >Chef</p>
-            </div>
-        </div>
-
-        <div className="tsc1">
-            <Image src={'/images/mix (6).png'} alt="logo" width={600} height={200} className="h-[330px]" />
-            <div className="dix">
-            <h1>Motin Molladst</h1>
-            <p >Chef</p>
-            </div>
-        </div>
-
-        <div className="tsc1">
-            <Image src={'/images/mix (5).png'} alt="logo" width={600} height={200} className="h-[330px]" />
-            <div className="dix">
-            <h1>William Rumi</h1>
-            <p >Chef</p>
-            </div>
-        </div>
-
-        </div>
-
-        <div className="kkla">
-
-        <div className="tsc1">
-            <Image src={'/images/mix (13).png'} alt="logo" width={600} height={200} className="h-[330px]" />
-            <div className="dix">
-            <h1>Kets william roy</h1>
-            <p >Chef</p>
-            </div>
-        </div>
-
-        <div className="tsc1">
-            <Image src={'/images/mix (1).png'} alt="logo" width={600} height={200} className="h-[330px]" />
-            <div className="dix">
-            <h1>Mahmud Kholil</h1>
-            <p >Chef</p>
-            </div>
-        </div>
-
-        <div className="tsc1">
-            <Image src={'/images/mix (2).png'} alt="logo" width={600} height={200} className="h-[330px]" />
-            <div className="dix">
-            <h1>Ataur Rahman</h1>
-            <p >Chef</p>
-            </div>
-        </div>
-
-        <div className="tsc1">
-            <Image src={'/images/mix (4).png'} alt="logo" width={600} height={200} className="h-[330px]" />
-            <div className="dix">
-            <h1>Monalisa holly</h1>
-            <p >Chef</p>
-            </div>
-        </div>
-        </div>
+    ))      
+}
+</div>
+</div>
            
 <br/>
 <br/>
@@ -171,3 +80,5 @@ export default async function Chefs(){
      
     )
 }
+
+export default Chefs
