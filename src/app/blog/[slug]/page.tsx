@@ -5,6 +5,8 @@ import { groq } from "next-sanity";
 import Image from "next/image";
 import { urlFor } from "@/sanity/lib/image";
 import Navbar from "@/components/nav";
+import { FiMinus, FiPlus } from "react-icons/fi";
+
 
 interface FoodPageProps {
   params: Promise<{slug:string}>
@@ -82,22 +84,29 @@ export default async function FoodPage({params}:FoodPageProps) {
             <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" className="w-4 h-4 text-yellow-400" viewBox="0 0 24 24">
               <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path>
             </svg>
-            <span className="text-gray-600 ml-3">4 Reviews</span>
+            <span className="text-gray-600 ml-3">4.0 Reviews | 22 Reviews</span>
           </span>
-
-
-
-
-
-
-
-    <p className="text-xl font-medium">
-    ${food?.price}  <s>${food?.originalPrice}</s>
+    <p className="text-xl font-medium space-x-3">
+    ${food?.price}   <s>${food?.originalPrice}</s>
     </p>
    
+    <div className="flex gap-4 items-center">
+      <h3>Quantity</h3>
+      <p className="quantity-desc flex items-center border-black ring-2 ring-black space-x-3">
+      <span className="minus">
+        <FiMinus/>
+      </span>
 
-    <button className="-ml-[0.5vw] mt-2 bg-black text-white w-40 h-16 rounded-xl ">Add to Card</button>
+      <span className="num"> 0 </span>
 
+      <span className="plus">
+        <FiPlus/>
+      </span>
+      </p>
+
+     
+     </div>
+     <button className="-ml-[0.5vw] mt-2 bg-black text-white w-40 h-16 rounded-xl ">Add to Card</button>
    </div>
    </div>
    </div>
