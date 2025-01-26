@@ -20,7 +20,8 @@ export interface Food {
    slug:{
     _type:'slug';
     current:string;
-   }
+   };
+   inventory:number;
    }
 
    

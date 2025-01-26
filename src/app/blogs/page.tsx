@@ -8,6 +8,8 @@ import { urlFor } from '@/sanity/lib/image'
 import Image from 'next/image'
 import Navbar from '@/components/nav';
 import Link from 'next/link'
+import { addToCart } from '../actionButton/action'
+import Swal from 'sweetalert2'
 
 
 
@@ -26,6 +28,21 @@ const Shop = () => {
  fetchfood()
 
     },[])
+
+
+    const handleAddToCart = (e: React.MouseEvent, food: Food) => {
+      e.preventDefault()
+      Swal.fire({
+          position: "top-right",
+          icon: "success",
+          title: `${food.name} add to cart`,
+          showConfirmButton: false,
+          timer: 1500
+      })
+  
+  
+      addToCart(food)
+     }
 
   return (
     <div>
@@ -88,7 +105,11 @@ const Shop = () => {
                  <h1 className='text-2xl'>{food.name}</h1>
                  <p className='w-48 py-1 text-lg '>{food.description}</p>
                  <p className='text-lg'>${food.price}</p>
-                
+                 <button className='bg-gradient-to-r from-blue-500 to-purple-500 text-white font-semibold py-2 px-4 rounded-lg shadow-md hover:shadow-lg hover:scale-110 transition-transform duration-300 ease-in-out'
+                onClick={(e) => handleAddToCart(e, food)}
+                >
+                Add To Cart
+                </button>
       </Link>
                     </div>
 
