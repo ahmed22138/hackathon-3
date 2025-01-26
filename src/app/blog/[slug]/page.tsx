@@ -8,6 +8,7 @@ import Navbar from "@/components/nav";
 import { FiMinus, FiPlus } from "react-icons/fi";
 import Swal from "sweetalert2";
 import { addToCart } from "@/app/actionButton/action";
+import Link from "next/link";
 
 
 interface FoodPageProps {
@@ -110,8 +111,8 @@ export default async function FoodPage({params}:FoodPageProps) {
 
      
      </div>
-     <button className="-ml-[0.5vw] mt-2 bg-black text-white w-40 h-16 rounded-xl " 
-     >Add to Card</button>
+   <Link href={'/shipping'} > <button className="-ml-[0.5vw] mt-2 bg-black text-white w-40 h-16 rounded-xl " 
+     >Add to Card</button> </Link>
    </div>
    </div>
    </div>
