@@ -21,6 +21,11 @@ export default {
 
       },
       {
+       name:'inventory',
+       type:'number',
+       title:'Inventory',
+      },
+      {
         name: 'category',
         type: 'string',
         title: 'Category',
