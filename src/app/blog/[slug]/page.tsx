@@ -6,6 +6,8 @@ import Image from "next/image";
 import { urlFor } from "@/sanity/lib/image";
 import Navbar from "@/components/nav";
 import { FiMinus, FiPlus } from "react-icons/fi";
+import Swal from "sweetalert2";
+import { addToCart } from "@/app/actionButton/action";
 
 
 interface FoodPageProps {
@@ -33,6 +35,8 @@ async function getFood(slug:string): Promise<Food>{
 export default async function FoodPage({params}:FoodPageProps) {
   const {slug} = await params;
   const food = await getFood(slug);
+
+
   return (
   <div>
    <Navbar/>
@@ -106,7 +110,8 @@ export default async function FoodPage({params}:FoodPageProps) {
 
      
      </div>
-     <button className="-ml-[0.5vw] mt-2 bg-black text-white w-40 h-16 rounded-xl ">Add to Card</button>
+     <button className="-ml-[0.5vw] mt-2 bg-black text-white w-40 h-16 rounded-xl " 
+     >Add to Card</button>
    </div>
    </div>
    </div>

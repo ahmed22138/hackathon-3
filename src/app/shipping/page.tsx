@@ -143,7 +143,7 @@ function ShippingCart() {
       </div>
 
       {/* Bottom Section */}
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 absolute top-[700px] ml-36 w-[1200px] ">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 absolute top-[780px] ml-36 w-[1200px] ">
         {/* Coupon Code Section */}
         <div>
           <h3 className="font-bold text-lg mb-4">Coupon Code</h3>
