@@ -10,6 +10,7 @@ import {
 import Swal from "sweetalert2";
 import { urlFor } from "@/sanity/lib/image";
 import Image from "next/image";
+import { useRouter } from "next/navigation";
 
 
 
@@ -59,7 +60,7 @@ function ShippingCart() {
       0
     );
   };
-
+  const router = useRouter();
   const handleProceed = () =>{
     Swal.fire({
       title: "Proceed to checkout?",
@@ -72,6 +73,9 @@ function ShippingCart() {
     }).then((result) => {
       if (result.isConfirmed) {
        Swal.fire("Success!", "Your order has been successfully processed!", "success");
+       
+       router.push('/checkout');
+
        setCartItems([]);
       }
 
