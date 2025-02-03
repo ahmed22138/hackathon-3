@@ -36,12 +36,13 @@ export default function blog(){
                             </div>
     <div>
    
-     
-      <div className="md:mt-28 md:w-[50vw] ml-44">
+     <br/>
+      <div className="md:mt-48 md:w-[50vw] ml-44">
 
      {
         blog.map((blog) => (
             <div key={blog._id} className="flex flex-col items-center justify-center">
+                <br/>
                 <div className="w-3/4">
                 {
                     blog.image && (
@@ -49,9 +50,11 @@ export default function blog(){
                   )  }
                    
                 </div>
-                <div className="w-3/4 mt-4">
+                <div className="md:w-3/4 mt-4">
                     <h1 className="text-3xl font-bold">{blog.title}</h1>
                     <p className="text-lg mt-2">{blog.description}</p>
+                    <button className="md:bg-amber-500 w-36 h-7 rounded-md mt-5 text-white">Read More</button>
+                 
                 </div>
             </div>
         ))
@@ -59,7 +62,10 @@ export default function blog(){
        
         </div>
         </div>
-
+      
+      <div>
+        <div></div>
+      </div>
 
 
 
