@@ -15,6 +15,7 @@ export default function About(){
             <p className="md:mt-5 md:text-xl">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam praesentium, aspernatur ullam ipsa quis sit tenetur minus deleniti, earum accusantium qui velit dolores alias sequi est porro totam inventore? Culpa!
             Mollitia tempore beatae incidunt laudantium quae tenetur pariatur, repudiandae molestiae iste! Alias natus dolore laudantium velit temporibus perferendis. Illo cum reiciendis accusamus unde? Natus, maxime sed. Facilis a eos assumenda?</p>
            <button className="md:w-44 md:h-10 md:bg-amber-500 md:mt-5 md:rounded-md">Show More</button>
+           <Image src={'/images/Line.png'} alt={'pics'} width={100} height={160}  />
                 </div>
         </div>
     )
