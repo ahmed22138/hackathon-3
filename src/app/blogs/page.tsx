@@ -6,7 +6,7 @@ import { urlFor } from "@/sanity/lib/image";
 import { allBlog } from "@/sanity/lib/queries";
 import Image from "next/image";
 import { useEffect, useState } from "react";
-import { Blog } from "../../../types/food";
+import { Blog } from "../../../types/blog";
 
 
 
@@ -37,26 +37,25 @@ export default function blog(){
     <div>
    
      
-      <div className="mt-80">
+      <div className="md:mt-28 md:w-[50vw] ml-44">
 
-   {
-    blog.map((blog) => (
-      <div key={blog._id} className="blog">
-
-{
-    blog.image && (
-      <div className="image">
-        <Image src={urlFor(blog.image).url()} alt={blog.title} width={500} height={500} />
-      </div>
-    )  
-}
-
-      <h2>{blog.title}</h2>
-        <p>{blog.description}</p>
-      </div>
-    ))
-   }
-
+     {
+        blog.map((blog) => (
+            <div key={blog._id} className="flex flex-col items-center justify-center">
+                <div className="w-3/4">
+                {
+                    blog.image && (
+                    <Image src={urlFor(blog.image).url()} alt="image" width={620} height={160} className="" />
+                  )  }
+                   
+                </div>
+                <div className="w-3/4 mt-4">
+                    <h1 className="text-3xl font-bold">{blog.title}</h1>
+                    <p className="text-lg mt-2">{blog.description}</p>
+                </div>
+            </div>
+        ))
+     }
        
         </div>
         </div>

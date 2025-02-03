@@ -21,14 +21,14 @@ export default {
             }
         },
       
-        {
-            name:'mainImage',
-            title:'Main image',
-            type:'image',
-            options:{
-                hotspot:true
-            }
-        },
+      {
+       name:'image',
+       title:'Image',
+       type:'image',
+       options:{
+        hotspot:true
+       }
+      },
 
         {
             title: 'Description',
