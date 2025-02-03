@@ -13,11 +13,10 @@ export default function About(){
               <Image src={'/images/120 Item.png'} alt={'pics'} width={400} height={160} className="md:absolute top-[110vw] left-[36vw]" />
               <Image src={'/images/Clean environment.png'} alt={'pics'} width={400} height={160} className="md:absolute top-[110vw] left-[65vw]" />
               <br/>
-              <Image src={'/images/Bg.png'} alt={'pics'} width={1920} height={160} className="md:absolute top-[136vw] left-0" />
+           
+            
             
             </div>
-
-
              <br/>
 
 
@@ -31,7 +30,14 @@ export default function About(){
 
              <h1 className="md:mt-80 md:-ml-52 md:text-5xl md:font-semibold">Why Choose us</h1>
              <p className="md:-ml-72 md:w-[35vw] md:mt-5 md:mb-8">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero consectetur facilis, debitis aperiam, blanditiis dolorum fuga, nobis eius labore illum nisi .</p>
+             <br/>
+
+             <h1 className="md:mt-80 md:-ml-52 md:text-5xl md:font-semibold">Team Member</h1>
+             <p className="md:-ml-72 md:w-[35vw] md:mt-[50vw] md:mb-8">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid temporibus sapiente obcaecati similique eius accusantium veniam quo debitis. Quod exercitationem ipsum.</p>
                 </div>
+
+
+                <Image src={'/images/Bg.png'} alt={'pics'} width={1920} height={160} className="md:absolute top[100vw] left-0" />
         </div>
     )
 }
