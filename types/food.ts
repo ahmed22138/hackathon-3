@@ -41,3 +41,28 @@ export interface Chef {
  description?:string;
  
 }
+
+
+
+
+
+export interface Blog {
+  _id:string;
+  title:string;
+  _type: "blog";
+  image?:{
+      asset : {
+        _ref:string;
+        _type:'image';
+      }
+  }
+  content?:string,
+ description?:string;
+
+ slug?:{
+  _type:'slug'
+  current:string;
+ };
+ 
+
+} 
