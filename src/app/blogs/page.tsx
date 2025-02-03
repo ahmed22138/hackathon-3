@@ -7,7 +7,7 @@ import { allBlog } from "@/sanity/lib/queries";
 import Image from "next/image";
 import { useEffect, useState } from "react";
 import { Blog } from "../../../types/blog";
-
+import { IoSearchSharp } from "react-icons/io5";
 
 
 export default function blog(){
@@ -64,14 +64,35 @@ export default function blog(){
         </div>
       
       <div>
-        <div></div>
+        <div className="md:-mt-[160vw] ml-[35vw] w-80">
+            <input id="text" type="text"   
+            placeholder="Search"
+            className="md:w-64 md:h-10 md:ml-96 md:mt-20 md:rounded-md md:border-2 md:border-amber-500 md:pl-5"
+            />
+            <button className="md:absolute top-[36.2vw] md:ml-[41.6vw] md:bg-amber-500 md:w-16 md:h-10 md:rounded-md md:text-white md:text-2xl"><IoSearchSharp className="ml-4" /></button>
+             <br/>
+
+
+             <Image src={'/images/Prince Miyako (1).png'} alt="image" width={360} height={200} className="md:mt-2 md:ml-96" />
+             
+             <Image src={'/images/Recent Post (1).png'} alt="image" width={360} height={300} className="md:mt-2 md:ml-96" />
+
+             <Image src={'/images/Filter by Menu (1).png'} alt="image" width={360} height={200} className="md:mt-2 md:ml-96" />
+
+             <Image src={'/images/Popular Tag (1).png'} alt="image" width={360} height={200} className="md:mt-2 md:ml-96" />
+
+             <Image src={'/images/Photo Gallery (1).png'} alt="image" width={360} height={200} className="md:mt-2 md:ml-96" />
+
+             <Image src={'/images/Flollow us (1).png'} alt="image" width={360} height={200} className="md:mt-2 md:ml-96" />
+        </div>
       </div>
 
 
-
-      </div>
-  
-
+  <div>
+                <Image src={'/images/Component 75.png'} alt="//" width={1923} height={740} className='md:mt-[50vw]'/>
+                </div>
+     
+</div>
 
  
     )
