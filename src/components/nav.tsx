@@ -19,7 +19,7 @@ export default function Navbar(){
         <ul>
             <li><Link className="active" href="/">Home</Link></li>
             <li><Link href="/menu">Menu</Link></li>
-            <li><Link href="/blogs">Blog</Link></li>
+            <li><Link href="/Blogs">Blog</Link></li>
             <li><Link href="/pages">Pages</Link></li>
             <li><Link href="/about">About</Link></li>
             <li><Link href="/shops">Shop</Link></li>
