@@ -13,9 +13,11 @@ export default function About(){
               <Image src={'/images/120 Item.png'} alt={'pics'} width={400} height={160} className="md:absolute top-[110vw] left-[36vw]" />
               <Image src={'/images/Clean environment.png'} alt={'pics'} width={400} height={160} className="md:absolute top-[110vw] left-[65vw]" />
               <br/>
-           
-            
-            
+              <Image src={'/images/Mark Henry.png'} alt={'pics'} width={400} height={160} className="md:absolute top-[145vw] left-20" />
+              <Image src={'/images/Mark Henry (1).png'} alt={'pics'} width={400} height={160} className="md:absolute top-[145vw] left-[25vw]" />
+              <Image src={'/images/Mark Henry (2).png'} alt={'pics'} width={400} height={160} className="md:absolute top-[145vw] left-[45vw]" />
+              <Image src={'/images/Mark Henry (3).png'} alt={'pics'} width={400} height={160} className="md:absolute top-[145vw] left-[65vw]" />
+
             </div>
              <br/>
 
@@ -32,12 +34,12 @@ export default function About(){
              <p className="md:-ml-72 md:w-[35vw] md:mt-5 md:mb-8">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero consectetur facilis, debitis aperiam, blanditiis dolorum fuga, nobis eius labore illum nisi .</p>
              <br/>
 
-             <h1 className="md:mt-80 md:-ml-52 md:text-5xl md:font-semibold">Team Member</h1>
-             <p className="md:-ml-72 md:w-[35vw] md:mt-[50vw] md:mb-8">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid temporibus sapiente obcaecati similique eius accusantium veniam quo debitis. Quod exercitationem ipsum.</p>
+             <h1 className="md:absolute top-[136vw] md:-ml-52 md:text-5xl md:font-semibold md:text-white">Team Member</h1>
+             <p className="md:absolute top-[140vw] md:-ml-80 md:w-[35vw] md:mb-8 md:text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid temporibus sapiente obcaecati similique eius accusantium veniam quo debitis.</p>
                 </div>
 
 
-                <Image src={'/images/Bg.png'} alt={'pics'} width={1920} height={160} className="md:absolute top[100vw] left-0" />
+                <Image src={'/images/Bg.png'} alt={'pics'} width={1920} height={160} className="md:mt-[50vw]" />
         </div>
     )
 }
