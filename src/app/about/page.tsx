@@ -30,14 +30,14 @@ export default function About(){
               <Image src={'/images/Mark Henry (2).png'} alt={'pics'} width={400} height={160} className="md:absolute top-[145vw] left-[45vw]" />
               <Image src={'/images/Mark Henry (3).png'} alt={'pics'} width={400} height={160} className="md:absolute top-[145vw] left-[65vw]" />
               <br/>
-              <Image src={'/images/Testimonials (2).png'} alt={'pics'} width={900} height={160} className="md:absolute top-[185vw] left-[20vw]" />
-              <Image src={'/images/Food Menu.png'} alt={'pics'} width={900} height={160} className="md:absolute top-[240vw] left-[20vw]" /> 
+              <Image src={'/images/Testimonials (2).png'} alt={'pics'} width={900} height={160} className="md:absolute top-[185vw] left-[20vw] xs:mt-[10vw]" />
+              <Image src={'/images/Food Menu.png'} alt={'pics'} width={900} height={160} className="md:absolute top-[210vw] left-[22vw] xs:mt-[30vw] xs:-ml-3" /> 
 
             </div>
              <br/>
 
 
-            <div className="md:ml-[54vw] md:-mt-[36vw] md:w-[40vw] xs:ml-4 xs:-mt-[950vw]">
+            <div className="md:ml-[54vw] md:-mt-[36vw] md:w-[40vw] xs:ml-4 xs:-mt-[990vw]">
             <Image src={'/images/Line.png'} alt={'pics'} width={100} height={160}   />
             <h1 className="md:mt-5 md:font-bold md:text-5xl xs:font-semibold xs:text-2xl xs:mt-5">Food is an important part of a Balanced Diet </h1>
             <p className="md:mt-5 md:text-xl xs:mt-4 xs:text-xs">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam praesentium, aspernatur ullam ipsa quis sit tenetur minus deleniti, earum accusantium qui velit dolores alias sequi est porro totam inventore? Culpa!
@@ -49,16 +49,16 @@ export default function About(){
              <p className="md:-ml-64 md:w-[35vw] md:mt-5 md:mb-8 xs:text-xs xs:mt-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero consectetur facilis, .</p>
              <br/>
 
-             <h1 className="md:absolute top-[136vw] md:-ml-52 md:text-5xl md:font-semibold md:text-white ">Team Member</h1>
-             <p className="md:absolute top-[140vw] md:-ml-80 md:w-[35vw] md:mb-8 md:text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid temporibus sapiente obcaecati similique eius accusantium veniam quo debitis.</p>
+             <h1 className="md:absolute -top-[96vw] md:-ml-52 md:text-5xl md:font-semibold md:text-white xs:mt-[232vw] xs:text-white">Team Member</h1>
+             <p className="md:absolute top-[140vw] md:-ml-80 md:w-[35vw] md:mb-8 md:text-white xs:text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid temporibus sapiente obcaecati similique eius accusantium veniam quo debitis.</p>
                 </div>
 
 
-                <Image src={'/images/Bg.png'} alt={'pics'} width={1920} height={260} className="md:mt-[50vw] xs:mt-[200vw]" />
+                <Image src={'/images/Bg.png'} alt={'pics'} width={1920} height={260} className="md:mt-[50vw] xs:-mt-[24vw]" />
 
                     
                            <div>
-                            <Image src={'/images/Component 75.png'} alt="//" width={1923} height={740} className="md:mt-[140vw] xs:mt-[100vw]"/>
+                            <Image src={'/images/Component 75.png'} alt="//" width={1923} height={740} className="md:mt-[140vw] xs:mt-[600vw]"/>
                             </div>
         </div>
         </div>
