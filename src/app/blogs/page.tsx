@@ -6,11 +6,11 @@ import { urlFor } from "@/sanity/lib/image";
 import { allBlog } from "@/sanity/lib/queries";
 import Image from "next/image";
 import { useEffect, useState } from "react";
-import { Blog } from "../../../types/blog";
+import type { Blog } from "../../../types/blog";
 import { IoSearchSharp } from "react-icons/io5";
 
 
-export default function blog(){
+export default function Blog(){
 
    const [blog , setBlog] = useState<Blog[]>([])
 
@@ -64,7 +64,7 @@ export default function blog(){
         </div>
       
       <div>
-        <div className="md:-mt-[160vw] md:ml-[35vw] md:w-80  xs:ml-7 xs:w-80">
+        <div className="md:-mt-[156.9vw] md:ml-[35vw] md:w-80  xs:ml-7 xs:w-80">
             <input id="text" type="text"   
             placeholder="Search"
             className="md:w-64 md:h-10 md:ml-96 md:mt-20 md:rounded-md md:border-2 md:border-amber-500 md:pl-5"
