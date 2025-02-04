@@ -1,11 +1,23 @@
 
+import Navbar from "@/components/nav";
 import Image from "next/image";
 
 
 
 export default function About(){
     return(
-        <div>
+    <div>
+  
+  <Navbar/>
+
+            <div className="hi12">
+                 <Image src={'/images/dc.png'} alt='//' width={1920} height={410} />
+                 <h1> Our Menu</h1>
+                 <h2>Home  &gt; <span>Menu</span></h2>
+                 </div>
+
+
+        <div className="md:absolute top-96">
             <div className="md:ml-36 md:mt-36">
               <Image src={'/images/Image (1).png'} alt={'pics'} width={600} height={700}  />
               <Image src={'/images/mlo.png'} alt={'pics'} width={1920} height={160} className="md:absolute top-[78vw] left-0" />
@@ -17,6 +29,9 @@ export default function About(){
               <Image src={'/images/Mark Henry (1).png'} alt={'pics'} width={400} height={160} className="md:absolute top-[145vw] left-[25vw]" />
               <Image src={'/images/Mark Henry (2).png'} alt={'pics'} width={400} height={160} className="md:absolute top-[145vw] left-[45vw]" />
               <Image src={'/images/Mark Henry (3).png'} alt={'pics'} width={400} height={160} className="md:absolute top-[145vw] left-[65vw]" />
+              <br/>
+              <Image src={'/images/Testimonials (2).png'} alt={'pics'} width={900} height={160} className="md:absolute top-[185vw] left-[20vw]" />
+              <Image src={'/images/Food Menu.png'} alt={'pics'} width={900} height={160} className="md:absolute top-[240vw] left-[20vw]" /> 
 
             </div>
              <br/>
@@ -40,6 +55,12 @@ export default function About(){
 
 
                 <Image src={'/images/Bg.png'} alt={'pics'} width={1920} height={160} className="md:mt-[50vw]" />
+
+                    
+                           <div>
+                            <Image src={'/images/Component 75.png'} alt="//" width={1923} height={740} className="md:mt-[140vw]"/>
+                            </div>
+        </div>
         </div>
     )
 }
