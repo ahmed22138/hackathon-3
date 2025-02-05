@@ -21,8 +21,8 @@ export default function About(){
             <div className="md:ml-36 md:mt-36 xs:ml-5 xs:mt-28">
               <Image src={'/images/Image (1).png'} alt={'pics'} width={600} height={700} className="md:w-[40vw]  xs:w-[90vw] " />
               <Image src={'/images/mlo.png'} alt={'pics'} width={1920} height={160} className="md:absolute -top-[70vw] left-0 xs:-ml-4 md:ml-0 xs:mt-[150vw]" />
-              <Image src={'/images/best chef.png'} alt={'pics'} width={400} height={160} className="md:absolute top-[110vw] left-24 " />
-              <Image src={'/images/120 Item.png'} alt={'pics'} width={400} height={160} className="md:absolute top-[110vw] left-[36vw]" />
+              <Image src={'/images/Best chef.png'} alt={'pics'} width={400} height={160} className="md:absolute top-[110vw] left-24 " />
+              <Image src={'/images/120 item.png'} alt={'pics'} width={400} height={160} className="md:absolute top-[110vw] left-[36vw]" />
               <Image src={'/images/Clean environment.png'} alt={'pics'} width={400} height={160} className="md:absolute top-[110vw] left-[65vw]" />
               <br/>
               <Image src={'/images/Mark Henry.png'} alt={'pics'} width={400} height={160} className="md:absolute top-[65vw] left-20 xs:mt-[80vw]" />
