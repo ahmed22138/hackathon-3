@@ -1087,6 +1087,208 @@ margin-top: 380vw;
 
 }
 
+@media (max-width:640px){
+  .mm{
+    width: 300px;
+    margin-top: 140px;
+  }
+
+  .ttg{
+margin-left: -120px ;
+margin-top: 170vw;
+  }
+
+  .klq{
+margin-left: -120px ;
+margin-top: 178vw;
+font-size: 3vw;
+  }
+
+  .ml{
+margin-left: -120px ;
+margin-top: 180vw;
+width: 300px;
+  }
+
+  .mt{
+margin-left: -120px ;
+margin-top: 184vw;
+width: 300px;
+  }
+
+  .mp{
+margin-left: -120px;
+
+margin-top: 184vw;
+width: 300px;}
+
+  .mb{
+ margin-left: -120px 
+;
+margin-top: 184vw;
+width: 300px;   
+  }
+
+
+
+
+
+
+
+  .j{
+    width: 300px;
+    margin-top: 670px;
+    margin-left: -56vw;
+  }
+
+ .tgr{
+   margin-left: -5px;
+   margin-top: 320vw;
+
+   
+ }
+
+ .r1{
+   margin-left: -5px;
+   width: 300px;
+   margin-top: 328vw;
+ }
+
+ .ma{
+   margin-left: -5px;
+   width: 300px;
+   margin-top: 330vw;
+ }
+
+ .mc{
+   margin-left: -5px;
+   width: 300px;
+   margin-top: 334vw;
+ }
+
+ .md{
+   margin-left: -5px;
+   width: 300px;
+   margin-top: 337vw;
+ }
+
+ .mz{
+     margin-left: -5px;
+     
+     width: 300px;
+     margin-top: 340vw;
+ }
+
+
+
+
+
+
+
+
+  .plp{
+    width: 300px;
+    margin-top: 1200px;
+  
+  }
+
+.tff{
+  margin-left: -120px;
+  margin-top: 456vw;
+}
+
+.njm{
+  margin-left: -120px;
+  margin-top: 463vw;
+}
+
+.nc{
+  margin-left: -120px;
+  margin-top: 466vw;
+width: 300px;
+}
+
+.nv{
+  margin-left: -120px;
+  margin-top: 466vw;
+width: 300px;
+}
+
+.nx{
+  margin-left: -120px;
+  margin-top: 463vw;
+width: 300px;
+}
+
+.nb{
+   margin-left: -120px;
+   margin-top: 469vw; 
+   width: 300px;
+}
+
+
+
+
+  .a{
+    width: 300px;
+    margin-top: 1700px;
+    margin-left: -56vw;
+  }
+
+.b{
+  margin-top: 603vw;
+}
+
+.r2{
+  margin-top: 610vw;
+}
+
+.za{
+ margin-top: 610vw;
+ width: 300px;
+}
+
+.zc{
+   margin-top: 613vw;
+   width: 300px;
+}
+
+.zd{
+ margin-top: 616vw;
+ width: 300px;  
+}
+
+.zz{
+   margin-top: 619vw;
+   width: 300px;
+}
+
+.hgs{
+  margin-top: 640vw;
+}
+
+.hgs h1{
+ position: absolute;
+ left: 190px;
+ font-size: 20vw;
+}
+
+.hgs p {
+position: absolute;
+top: -5vw; 
+left: 10vw;
+}
+
+.tci{
+  margin-top: 640vw;
+}
+
+.mn{
+  margin-top: 340vw;
+}
+
+}
+
 .ttg{
   position: absolute;
   left: 45vw;
