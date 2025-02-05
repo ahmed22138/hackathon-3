@@ -1,4 +1,5 @@
 import Header from "@/components/header";
+import { SignedIn, SignedOut, SignInButton, UserButton } from "@clerk/nextjs";
 import Image from "next/image";
 import { MdAccountBox } from "react-icons/md";
 import { MdOutlineEmail } from "react-icons/md";
@@ -12,12 +13,22 @@ export default function Signup(){
 
          <div className="hi15">
                 <Image src={'/images/dc.png'} alt='//' width={1920} height={410} />
-                <h1>Sign  up  page</h1>
-                <h2>Home  &gt; <span>sign up</span></h2>
+                <h1>Sign  In  page</h1>
+                <h2>Home  &gt; <span>sign In</span></h2>
                 </div>
 
+             
+                
+               <div>
                <div className="litsn">
-                <h1>Sign up</h1>
+                <h1>Sign In</h1>
+                 
+                <SignedIn>
+                    <UserButton/>
+                </SignedIn>
+
+
+
                 <RiLock2Line className="m1s"/>
                 < MdOutlineEmail className="lmb"/>
                 <MdAccountBox className="lbw"/>
@@ -27,9 +38,23 @@ export default function Signup(){
                 <br/>
                 <input type="checkbox" className="j2"/>
                 <p>Remember me?</p>
-                <button>Sign up</button>
+                <div>
+                <SignedOut>
+                        <SignInButton mode="modal" />
+                        </SignedOut>
+                {/* <button>Sign in</button> */}
                 <p className="ksa">Forget me?</p>
+
+                
                </div>
+            
+               </div>
+               
+               </div>
+               
+              
+
+
                  <Image src={'/images/or.png'} alt=".." width={300} height={152} className="llw"/>
 
                  <Image src={'/images/Component 75.png'} alt="//" width={1923} height={740} className="tci12"/>

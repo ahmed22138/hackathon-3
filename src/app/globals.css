@@ -1602,10 +1602,11 @@ font-weight: 700;
 
 .litsn{
   background:rgb(241, 241, 241);
+  
   height: 40vw;
   width: 26vw;
   position: absolute;
-  top: 37vw;
+  top: 39vw;
   left: 40vw;
   box-shadow: rgba(0, 0, 0, 0.577) 10px 10px 20px;
   border-radius: 15px;
@@ -1613,7 +1614,7 @@ font-weight: 700;
 
 .litsn h1{
   position: absolute;
-  top: 40px;
+  top: 87px;
   left: 35px;
   font-size: 2vw;
   font-weight: 700;
@@ -1639,21 +1640,21 @@ font-weight: 700;
 
 .m1s{
   position: absolute;
-  top: 17vw;
+  top: 20.7vw;
   left: 33px;
 }
 
 
 .lmb{
   position: absolute;
-  top: 13vw;
+  top: 16.6vw;
   left: 33px;
 }
 
 
 .lbw{
   position: absolute;
-  top: 9vw;
+  top: 12.7vw;
   left: 33px;
 }
 

@@ -11,6 +11,7 @@ import Swal from "sweetalert2";
 import { urlFor } from "@/sanity/lib/image";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
+import AuthGuard from "@/components/AuthGuard";
 
 
 
@@ -83,6 +84,7 @@ function ShippingCart() {
   }
 
   return (
+    <AuthGuard>
     <div className="container mx-auto p-4">
       {/* Product Table */}
       <div className="overflow-x-auto">
@@ -189,6 +191,7 @@ function ShippingCart() {
         </div>
       </div>
     </div>
+    </AuthGuard>
   );
 }
 
