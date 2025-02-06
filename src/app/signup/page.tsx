@@ -1,5 +1,4 @@
 import Header from "@/components/header";
-import { SignedIn, SignedOut, SignInButton, UserButton } from "@clerk/nextjs";
 import Image from "next/image";
 import { MdAccountBox } from "react-icons/md";
 import { MdOutlineEmail } from "react-icons/md";
