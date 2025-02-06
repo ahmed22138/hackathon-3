@@ -5,12 +5,12 @@ import { Food } from '../../../types/food'
 import { client } from '@/sanity/lib/client'
 import { allProduct } from '@/sanity/lib/queries'
 import { urlFor } from '@/sanity/lib/image'
-import Image from 'next/image'
 import Navbar from '@/components/nav';
 import Link from 'next/link'
 import { addToCart } from '../actionButton/action'
 import Swal from 'sweetalert2'
-
+import { IoSearchSharp } from "react-icons/io5";
+import Image from 'next/image'
 
 
 
@@ -44,6 +44,9 @@ const Shop = () => {
       addToCart(food)
      }
 
+
+
+
   return (
     <div>
 
@@ -51,8 +54,8 @@ const Shop = () => {
                 
                   <div className="hi12">
                        <Image src={'/images/dc.png'} alt='//' width={1920} height={410} />
-                       <h1> Our Blog</h1>
-                       <h2>Home  &gt; <span>Blog</span></h2>
+                       <h1> Our Shop</h1>
+                       <h2>Home  &gt; <span>Shop</span></h2>
                        </div>
     
                        <div className="nixc">
@@ -76,9 +79,6 @@ const Shop = () => {
           </div>
         </div>
           </div>
-
-
-
 
 
 
@@ -123,12 +123,64 @@ const Shop = () => {
     </div>
 
 
+
+
+    <div className='md:w-80 md:h-96  md:ml-[75vw]  md:-mt-[97vw] xs:ml-14 '>
+      <input id='text' type='text' placeholder='Search' className='md:w-50 md:h-10  md:-mt-[5vw] md:rounded-md md:px-4 md:py-2 md:border md:border-gray-300 md:focus:outline-none md:focus:border-amber-500'   />
+      <button className='md:bg-amber-500 md:h-10 md:w-10 md:rounded-lg md:text-2xl md:text-white md:absolute top-[43.3vw]'><IoSearchSharp className='ml-2' /></button>
+            <div>
+
+          <h1 className='md:ml-3 md:text-2xl md:mt-5 md:font-semibold  '>Category</h1>
+          <br/>
+          <input type='checkbox' className='ml-3'/>
+          <label className='ml-2'>Sandwiches</label>
+          <br/>
+          <input type='checkbox' className='ml-3'/>
+          <label className='ml-2'>Burger</label>
+          <br/>
+          <input type='checkbox' className='ml-3'/>
+          <label className='ml-2'>Chicken Chup</label>
+          <br/>
+          <input type='checkbox' className='ml-3'/>
+          <label className='ml-2'>Drink</label>
+          <br/>
+          <input type='checkbox' className='ml-3'/>
+          <label className='ml-2'>Pizza</label>
+          <br/>
+          <input type='checkbox' className='ml-3'/>
+          <label className='ml-2'>Thi</label>
+          <br/>
+          <input type='checkbox' className='ml-3'/>
+          <label className='ml-2'>Non Veg</label>
+          <br/>
+          <input type='checkbox' className='ml-3'/>
+          <label className='ml-2'>Uncalegorized</label>
+          <br/>
+
+          <Image src={'/images/Banner (1).png'} alt='pic' width={250} height={100} className='md:mt-7'/>
+          <br/>
+          <Image src={'/images/Filter by Price.png'} alt='pic' width={240} height={100} />
+          <br/>
+          <Image src={'/images/Latest Product (1).png'} alt='pic' width={250} height={100} />
+          <br />
+          <Image src={'/images/Product Tag.png'} alt='pic' width={250} height={100} />
+            </div>
+           </div>
+
+
+
+
+
+
      <div>
-                <Image src={'/images/Component 75.png'} alt="//" width={1923} height={740} className='mt-20'/>
+                <Image src={'/images/Component 75.png'} alt="//" width={1923} height={740} className='md:mt-[80vw] xs:mt-16'/>
                 </div>
     
     </div>
+
+
   )
 }
+
 
 export default Shop
