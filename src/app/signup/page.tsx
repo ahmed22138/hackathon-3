@@ -23,10 +23,7 @@ export default function Signup(){
                <div className="litsn">
                 <h1>Sign In</h1>
                  
-                <SignedIn>
-                    <UserButton/>
-                </SignedIn>
-
+             
 
 
                 <RiLock2Line className="m1s"/>
@@ -39,9 +36,6 @@ export default function Signup(){
                 <input type="checkbox" className="j2"/>
                 <p>Remember me?</p>
                 <div>
-                <SignedOut>
-                        <SignInButton mode="modal" />
-                        </SignedOut>
                 {/* <button>Sign in</button> */}
                 <p className="ksa">Forget me?</p>
 
