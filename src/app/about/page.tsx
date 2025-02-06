@@ -12,8 +12,8 @@ export default function About(){
 
             <div className="hi12">
                  <Image src={'/images/dc.png'} alt='//' width={1920} height={410} />
-                 <h1> Our Menu</h1>
-                 <h2>Home  &gt; <span>Menu</span></h2>
+                 <h1> Our About</h1>
+                 <h2>Home  &gt; <span>About</span></h2>
                  </div>
 
 

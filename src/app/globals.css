@@ -862,6 +862,19 @@ margin-top: 380vw;
  margin-left: 150px;
 }
 
+@media (max-width:640px){
+  .ki10{
+    position: absolute;
+    top: 210vw;
+    /* margin-top: 200vw; */
+  }
+.lite{
+  position: absolute;
+  top: 300vw;
+}
+
+}
+
 .lite{
   position:relative;
   margin-top: 15vw;
@@ -895,6 +908,19 @@ margin-top: 380vw;
   margin-left: -22vw;
   width: 350px;
   height: 120px;
+ 
+ }
+
+ .footers{
+  position: relative;
+  margin-top: -630vw;
+  
+
+ 
+ }
+
+ .ktms{
+  
  
  }
 
